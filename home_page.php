@@ -39,7 +39,7 @@ if (!isset($_SESSION['username'])) {
                 <li><a href="#menu"> Menu </a></li>
                 <!-- <li><a href="#services"> Service Kami </a></li> -->
                 <li><a href="#kontak"> Kontak </a></li>
-                <li><a href=""> Hello,  </a></li>
+                <li><a href=""> Hello, <?php echo($_SESSION['username'])?></a></li>
             </ul>
         </header>
 

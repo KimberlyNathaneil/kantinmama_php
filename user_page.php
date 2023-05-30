@@ -16,8 +16,8 @@ if (isset($_POST['submit'])) {
 
 	$sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
 	$result = mysqli_query($conn, $sql);
-	if ($result->num_rows > 0) {
-		$row = mysqli_fetch_assoc($result);
+	if ($result->num_rows != 0) {
+		$row = mysqli_fetch_array($result);
 		$_SESSION['username'] = $row['username'];
 		header("Location: home_page.php");
 	} else {

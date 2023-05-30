@@ -17,6 +17,7 @@ if (isset($_POST['submit'])) {
 	$cpassword = md5($_POST['cpassword']);
 
 	if ($password == $cpassword) {
+		$_SESSION['username'] = $username;
 		$sql = "SELECT * FROM users WHERE email='$email'";
 		$result = mysqli_query($conn, $sql);
 		if (!$result->num_rows > 0) {
