@@ -8,7 +8,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title> Kantin Mama </title>
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/order.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
 
         <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -29,21 +30,21 @@
                 <li><a href="index.php"> Menu </a></li>
                 <!-- <li><a href="#services"> Service Kami </a></li> -->
                 <li><a href="index.php"> Kontak </a></li>
-                <li><a href="user_page.php"> Profil </a></li>
+                <li><a href=""> Hello,  </a></li>
             </ul>
         </header>
 
-        <section class="menu" id="menu">
+        <section class="menu_order" id="menu_order">
 
-            <div class="menu_container">
-                <div class="box">
-                    <div class="box-img">
+            <div class="menu_container_order">
+                <div class="box_order">
+                    <div class="box-img-order">
                         <img src="image/nasi ayam geprek.jpeg">
                     </div>
                     <h2>Nasi Ayam Geprek</h2>
                     <h3> Nasi dengan ayam geprek menggunakan sambal hijau </h3>
                     <span> Rp. 15.000 </span>
-                    <a href="#beranda" class="menu_btn"> <i class='bx bx-cart-alt'></i></a>
+                    <a href="order_cart_insert.php" class="menu_btn"> <i class='bx bx-cart-alt'></i></a>
                 </div>
 
                 <div class="box">
@@ -53,7 +54,7 @@
                     <h2>Nasi Goreng</h2>
                     <h3> Nasi yang digoreng ciri khas Kantin Mama </h3>
                     <span> Rp. 15.000 </span>
-                    <a href="#beranda" class="menu_btn"> <i class='bx bx-cart-alt'></i> </a>
+                    <a href="order_cart_insert.php" class="menu_btn"> <i class='bx bx-cart-alt'></i> </a>
                 </div>
 
                 <div class="box">
@@ -63,7 +64,7 @@
                     <h2>Nasi Ayam Karage</h2>
                     <h3> Nasi dengan ayam berbalur saos karage </h3>
                     <span> Rp. 15.000 </span>
-                    <a href="#beranda" class="menu_btn"> <i class='bx bx-cart-alt'></i> </a>
+                    <a href="order_cart_insert.php" class="menu_btn"> <i class='bx bx-cart-alt'></i> </a>
                 </div>
 
                 <div class="box">
@@ -73,7 +74,7 @@
                     <h2>Koipeng</h2>
                     <h3> Nasi dengan ayam kecap tradisional dan timun, menggunakan kuah kental yang disediakan </h3>
                     <span> Rp. 15.000 </span>
-                    <a href="#beranda" class="menu_btn"> <i class='bx bx-cart-alt'></i> </a>
+                    <a href="order_cart_insert.php" class="menu_btn"> <i class='bx bx-cart-alt'></i> </a>
                 </div>
 
                 <div class="box">
@@ -83,7 +84,7 @@
                     <h2>Cheesy Chicken</h2>
                     <h3> Nasi dengan ayam menggunakan saos keju diatasnya </h3>
                     <span> Rp. 15.000 </span>
-                    <a href="beranda" class="menu_btn"> <i class='bx bx-cart-alt'></i> </a>
+                    <a href="order_cart_insert.php" class="menu_btn"> <i class='bx bx-cart-alt'></i> </a>
                 </div>
             </div>
         </section>
@@ -99,7 +100,7 @@
                                 <li><a href="#menu">Menu</a></li>
                                 <!-- <li><a href="#">Service Kami</a></li> -->
                                 <li><a href="#kontak">Kontak</a></li>
-                                <li><a href="user_page.php">Profil</a></li>
+                                <li><a href="">Profil</a></li>
                             </ul>
                         </div>
 
