@@ -210,19 +210,6 @@ section{
     border-radius: 0 0.5rem 0 0.5rem;
 }
 
-.menu_btn{
-    display: inline-block;
-    padding: 10px 20px;
-    background: var(--main-color);
-    color: #fff;
-    border-radius: 0.5rem;
-}
-
-.menu_btn:hover{
-    transform: scale(1.2) translateY(10px);
-    transition: 0.4s;
-}
-
 .cta{
     background: #feeee7;
     padding: 70px 0;
