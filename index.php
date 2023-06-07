@@ -73,55 +73,24 @@
                 </div>
 
                 <div class="menu_container">
-                    <div class="box">
-                        <div class="box-img">
-                            <img src="image/nasi ayam geprek.jpeg">
-                        </div>
-                        <h2>Nasi Ayam Geprek</h2>
-                        <h3> Nasi dengan ayam geprek menggunakan sambal hijau </h3>
-                        <span> Rp. 15.000 </span>
-                        <a href="order.php" class="menu_btn"> <i class='bx bx-cart-alt'></i></a>
-                    </div>
+                    <?php
+                        $sql_produk = "SELECT * FROM produk";
+                        $query = mysqli_query($conn, $sql_produk);
 
-                    <div class="box">
-                        <div class="box-img">
-                            <img src="image/nasi goreng.jpeg">
-                        </div>
-                        <h2>Nasi Goreng</h2>
-                        <h3> Nasi yang digoreng ciri khas Kantin Mama </h3>
-                        <span> Rp. 15.000 </span>
-                        <a href="order.php" class="menu_btn"> <i class='bx bx-cart-alt'></i> </a>
-                    </div>
-
-                    <div class="box">
-                        <div class="box-img">
-                            <img src="image/nasi ayam karage.jpeg">
-                        </div>
-                        <h2>Nasi Ayam Karage</h2>
-                        <h3> Nasi dengan ayam berbalur saos karage </h3>
-                        <span> Rp. 15.000 </span>
-                        <a href="order.php" class="menu_btn"> <i class='bx bx-cart-alt'></i> </a>
-                    </div>
-
-                    <div class="box">
-                        <div class="box-img">
-                            <img src="image/nasi ayam.jpeg">
-                        </div>
-                        <h2>Koipeng</h2>
-                        <h3> Nasi dengan ayam kecap tradisional dan timun, menggunakan kuah kental yang disediakan </h3>
-                        <span> Rp. 15.000 </span>
-                        <a href="order.php" class="menu_btn"> <i class='bx bx-cart-alt'></i> </a>
-                    </div>
-
-                    <div class="box">
-                        <div class="box-img">
-                            <img src="image/cheesy chicken.jpeg">
-                        </div>
-                        <h2>Cheesy Chicken</h2>
-                        <h3> Nasi dengan ayam menggunakan saos keju diatasnya </h3>
-                        <span> Rp. 15.000 </span>
-                        <a href="order.php" class="menu_btn"> <i class='bx bx-cart-alt'></i> </a>
-                    </div>
+                        while($row = mysqli_fetch_array($query)){
+                            ?>
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="image/<?=$row['foto'];?>">
+                                    </div>
+                                    <h2><?=$row['namaproduk'];?></h2>
+                                    <h3><?=$row['deskripsi'];?></h3>
+                                    <span>Rp<?=number_format($row['harga'],2,',','.');?></span>
+                                    <a href="order.php" class="menu_btn"> <i class='bx bx-cart-alt'></i></a>
+                                </div>
+                            <?php
+                        }
+                    ?>
 
                 </div>
             </section>
