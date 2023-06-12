@@ -38,7 +38,7 @@ while($row=mysqli_fetch_array($query))
                                     </div>
                                 </div>
                                 <div class="card-footer">
-                                    <a href="#" class="col-sm-12 btn btn-info">
+                                    <a href="https://api.whatsapp.com/send/?phone=6281254003747&text&type=phone_number&app_absent=0" target="_blank" class="col-sm-12 btn btn-info">
                                         <i class="fas fa-shopping-cart"></i> Order
                                     </a>
                                 </div>

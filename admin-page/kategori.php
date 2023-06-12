@@ -36,9 +36,9 @@ else {
                                     <tbody>
                                     <?php 
                                     $no  = 1;
-$sql = "SELECT *, 
-               (SELECT COUNT(*) FROM produk WHERE produk.idk=kategori.idk) as jp 
-               FROM kategori";
+                                    $sql = "SELECT *, 
+                                    (SELECT COUNT(*) FROM produk WHERE produk.idk=kategori.idk) as jp 
+                                    FROM kategori";
                                     $query = mysqli_query($con,$sql);
                                     while($row=mysqli_fetch_array($query))
                                     {

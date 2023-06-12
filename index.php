@@ -20,7 +20,7 @@
     <body>
         
         <header>
-            <a href="#" class="logo"> Kantin Mama </a>
+            <a href="#beranda" class="logo"> Kantin Mama </a>
             <div class="bx bx-menu" id="icon_menu"> </div>
 
             <ul class="navbar">
@@ -29,7 +29,6 @@
                 <li><a href="#menu"> Menu </a></li>
                 <!-- <li><a href="#services"> Service Kami </a></li> -->
                 <li><a href="#kontak"> Kontak </a></li>
-                <li><a href="user_page.php"> Admin </a></li>
             </ul>
         </header>
 
@@ -86,7 +85,7 @@
                                     <h2><?=$row['namaproduk'];?></h2>
                                     <h3><?=$row['deskripsi'];?></h3>
                                     <span>Rp<?=number_format($row['harga'],2,',','.');?></span>
-                                    <a href="order.php" class="menu_btn"> <i class='bx bx-cart-alt'></i></a>
+                                    <a href="https://api.whatsapp.com/send/?phone=6281254003747&text&type=phone_number&app_absent=0" target="_blank" class="menu_btn"> <i class='bx bx-cart-alt'></i></a>
                                 </div>
                             <?php
                         }
@@ -143,7 +142,6 @@
                                 <li><a href="#menu">Menu</a></li>
                                 <!-- <li><a href="#">Service Kami</a></li> -->
                                 <li><a href="#kontak">Kontak</a></li>
-                                <li><a href="user_page.php"> Admin </a></li>
                             </ul>
                         </div>
 
