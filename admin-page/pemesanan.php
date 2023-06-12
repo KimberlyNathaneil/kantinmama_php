@@ -22,7 +22,7 @@ while($row=mysqli_fetch_array($query))
     $foto = "default.jpg";
     if(!empty($row['foto'])) { $foto = $row['foto']; }
 
-    $link_foto  = "./images/produk/$foto";
+    $link_foto  = "../image/$foto";
 ?>                        
                         <div class="col-sm-3 mb-4">
                             <div class="card shadow h-100 py-2">

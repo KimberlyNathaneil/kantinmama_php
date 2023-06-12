@@ -14,7 +14,7 @@
             <div class="content">
                 <h3> Hi, <span> kawan </span></h3>
                 <h1> Selamat datang di Kantin Mama </h3>
-                <a href="home_page.php" class="btn"> Masuk </a>
+                <a href="admin-page/index.php" class="btn"> Admin Panel </a>
                 <a href="logout.php" class="btn"> Keluar </a>
             </div>
         </div>

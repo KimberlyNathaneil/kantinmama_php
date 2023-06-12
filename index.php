@@ -29,7 +29,7 @@
                 <li><a href="#menu"> Menu </a></li>
                 <!-- <li><a href="#services"> Service Kami </a></li> -->
                 <li><a href="#kontak"> Kontak </a></li>
-                <li><a href="user_page.php"> Profil </a></li>
+                <li><a href="user_page.php"> Admin </a></li>
             </ul>
         </header>
 
@@ -143,7 +143,7 @@
                                 <li><a href="#menu">Menu</a></li>
                                 <!-- <li><a href="#">Service Kami</a></li> -->
                                 <li><a href="#kontak">Kontak</a></li>
-                                <li><a href="user_page.php">Profil</a></li>
+                                <li><a href="user_page.php"> Admin </a></li>
                             </ul>
                         </div>
 

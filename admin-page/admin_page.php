@@ -1,6 +1,6 @@
 <?php
 
-include 'connection/config.php';
+include '../connection/config.php';
 
 session_start();
 
@@ -33,30 +33,17 @@ if (isset($_POST['submit'])) {
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style_user_php.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style_user_php.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 	<title>Kantin Mama</title>
 </head>
 <body>
-    <header>
-        <a href="#" class="logo"> Kantin Mama </a>
-        <div class="bx bx-menu" id="icon_menu"> </div>
-
-            <ul class="navbar">
-            <li><a href="index.php"> Beranda </a></li>
-            <li><a href="index.php"> Tentang Kami </a></li>
-            <li><a href="index.php"> Menu </a></li>
-            <!-- <li><a href="#services"> Service Kami </a></li> -->
-            <li><a href="index.php"> Kontak </a></li>
-            <li><a href="user_page.php"> Admin </a></li>
-        </ul>
-    </header>
 
 	<div class="container">
-		<form action="" method="POST" class="login-email">
+		<form action="process_admin_page.php" method="POST" class="login-email">
 			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Masuk</p>
 			<div class="input-group">
-				<input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
+				<input type="text" placeholder="Admin" name="admin" value="<?php echo $email; ?>" required>
 			</div>
 			<div class="input-group">
 				<input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
@@ -64,7 +51,6 @@ if (isset($_POST['submit'])) {
 			<div class="input-group">
 				<button name="submit" class="btn">Masuk</button>
 			</div>
-			<p class="login-register-text">Belum punya akun? <a href="register.php">Daftar Disini</a>.</p>
 		</form>
 	</div>
 </body>
