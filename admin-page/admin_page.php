@@ -2,8 +2,6 @@
 session_start();
 include '../connection/config.php';
 
-
-
 error_reporting(0);
 
 if (isset($_SESSION['admin'])) {
