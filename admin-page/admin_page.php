@@ -1,25 +1,25 @@
 <?php
-
+session_start();
 include '../connection/config.php';
 
-session_start();
+
 
 error_reporting(0);
 
-if (isset($_SESSION['username'])) {
-    header("Location: welcome.php");
+if (isset($_SESSION['admin'])) {
+    header("Location: ./index.php");
 }
 
 if (isset($_POST['submit'])) {
-	$email = $_POST['email'];
+	$admin = $_POST['admin'];
 	$password = md5($_POST['password']);
 
-	$sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
+	$sql = "SELECT * FROM admins WHERE nama_admin ='$admin' AND password='$password'";
 	$result = mysqli_query($conn, $sql);
 	if ($result->num_rows != 0) {
 		$row = mysqli_fetch_array($result);
-		$_SESSION['username'] = $row['username'];
-		header("Location: welcome.php");
+		$_SESSION['admin'] = $admin;
+		header("Location: ./index.php");
 	} else {
 		echo "<script>alert('Uh oh.. Email Atau Password anda Salah.')</script>";
 	}

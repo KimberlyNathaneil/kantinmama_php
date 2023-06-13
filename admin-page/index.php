@@ -1,5 +1,13 @@
 <?php
+session_start();
 include "connection.php";
+
+// error_reporting(0);
+
+if (!isset($_SESSION['admin'])) {
+    header("Location: ./admin_page.php");
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

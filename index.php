@@ -1,5 +1,5 @@
 <?php
-@include 'connection/config.php';
+include 'connection/config.php';
 ?>
 
 <!DOCTYPE html>
@@ -77,7 +77,7 @@
                         $query = mysqli_query($conn, $sql_produk);
 
                         while($row = mysqli_fetch_array($query)){
-                            ?>
+                    ?>
                                 <div class="box">
                                     <div class="box-img">
                                         <img src="image/<?=$row['foto'];?>">
@@ -87,7 +87,7 @@
                                     <span>Rp<?=number_format($row['harga'],2,',','.');?></span>
                                     <a href="https://api.whatsapp.com/send/?phone=6281254003747&text&type=phone_number&app_absent=0" target="_blank" class="menu_btn"> <i class='bx bx-cart-alt'></i></a>
                                 </div>
-                            <?php
+                    <?php
                         }
                     ?>
 
